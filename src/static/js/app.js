@@ -2,14 +2,17 @@ function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
+            {/* Todo app by Anam Shahzadi */}
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
+                    <h1 className="text-center">Todo List app by Anam Shahzadi</h1>
                     <TodoListCard />
                 </Col>
             </Row>
         </Container>
     );
 }
+
 
 function TodoListCard() {
     const [items, setItems] = React.useState(null);
